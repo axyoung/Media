@@ -5,13 +5,18 @@
  */
 
 #ifndef MUSIC_H
-//#include "media.h"
+#define MUSIC_H
 #include <iostream>
+#include "media.h"
 
 using namespace std;
 
-class music {
-	// should have author, year, duration and publisher
+class music : public media {
+private:
+	char artist[26];
+	int duration;
+	char publisher[26];
+public:	
 	music();
 };
 
