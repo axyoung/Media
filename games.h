@@ -1,17 +1,21 @@
 /*
  * Alex Young
  * Header for games
- * Last updated: 10/27/2017
+ * Last updated: 10/30/2017
  */
 
 #ifndef GAMES_H
-//#include "media.h"
+#define GAMES_H
 #include <iostream>
+#include "media.h"
 
 using namespace std;
 
-class games {
-	// should have title, year, publisher, and rating
+class games : public media {
+private:
+	char publisher[26];
+	int rating;
+public:
 	games();
 };
 
