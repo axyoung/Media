@@ -17,27 +17,34 @@ using namespace std;
 // It reads and processes commands in a loop
 class dB {
 private:
+	// vector that holds pointers to my classes
 	vector <media *> dataBase;
 public:
+	// my functions
 	void add();
 	void search();
 	void del();
 	void print();
+	// I am done if I finish processing commands
 	bool processCommand();
 };
 
+// add in a new file in any of the media types
 void dB::add() {
 	dataBase.push_back(new media);
 }
 
+// search for a file and print
 void dB::search() {
 
 }
 
+// delete a chosen file from a chosen media type
 void dB::del() {
 
 }
 
+// I print from my database all the media files
 void dB::print() {
 
 }
@@ -80,6 +87,6 @@ int main() {
 	// while I am still processing commands
 	while (m.processCommand()) {
 	}
-	// if I stop processing, it means i QUIT and I am done
+	// if I stop processing, it means I QUIT and I am done
 	return 0;
 }
